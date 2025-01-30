@@ -1,42 +1,42 @@
 # **E-commerce Marketing and sales** 
 # **insights**
-In an e-commerce platform of a leading online retail company, we are facing challenges in optimizing our marketing strategies, improving customer engagement, and maximizing revenue growth. With a vast customer base and a wide range of products, it's becoming increasingly difficult to identify areas of improvement and make data-driven decisions. 
+In an e-commerce platform of a leading online retail company, we are facing 
 
-That's where data analysis comes in. By analyzing the transaction data, customer demographics, marketing spend, and discount coupon usage, we can gain valuable insights into customer behavior, preferences, and needs. You can identify trends and patterns that can inform your marketing strategies, product offerings, and customer engagement initiatives. 
+challenges in optimizing our marketing strategies, improving customer engagement, and maximizing revenue growth. With a vast customer base and a wide range of products, it's becoming increasingly difficult to identify areas of improvement and make data-driven decisions. 
 
-![](images/Aspose.Words.34ad650c-9d10-4395-bcf2-0f0df7b8b7b9.001.jpeg)
+That's where data analysis comes in. By analyzing the transaction data, customer 
+
+demographics, marketing spend, and discount coupon usage, we can gain valuable insights into customer behavior, preferences, and needs. You can identify trends and patterns that can inform your marketing strategies, product offerings, and customer engagement initiatives. 
+
+![](images/Aspose.Words.adc54386-ef95-453a-b1af-d00af5805741.001.jpeg)
 ## **Data Overview** 
 **Online\_Sales.csv** 
 
-- This file contains transaction-level data for online sales, including customer and product information, transaction dates, and pricing details. 
-
-**Customers\_Data.csv** 
-
+- This file contains transaction-level data for online sales, including customer and product information, transaction dates, and pricing details. **Customers\_Data.csv** 
 - This file contains demographic data for customers, including their unique IDs, gender, location, and tenure in months. 
 
-**Discount\_Coupon.csv** 
+  **Discount\_Coupon.csv** 
 
 - This file contains information on discount coupons offered to customers, including the month and product category for which the coupon is applicable, the coupon code, and the discount percentage. 
 
 **Marketing\_Spend.csv** 
 
-- This file contains daily marketing spend data for both offline and online channels. 
-
-**Tax\_Amount.csv** 
-
+- This file contains daily marketing spend data for both offline and online channels. **Tax\_Amount.csv** 
 - This file contains GST (Goods and Services Tax) details for different product categories, including the percentage of GST applicable. 
 
 
 
 |File Name |Description |Variables |
 | - | - | - |
-|Online\_Sales.csv |Transaction-level online sales data |CustomerID, Transaction\_ID, Transaction\_Date, Product\_SKU, Product\_Description, Product\_Category, Quantity, Avg\_Price, Delivery\_Charges, Coupon\_Status |
-|Customers\_Data.csv |Customer demographic data |CustomerID, Gender, Location, Tenure\_Months |
-|Discount\_Coupon.csv |Discount coupon information |Month, Product\_Category, Coupon\_Code, Discount\_pct |
+|Online\_Sales.csv |<p>Transaction-level </p><p>online sales data </p>|<p>CustomerID, Transaction\_ID, </p><p>Transaction\_Date, Product\_SKU, Product\_Description, Product\_Category, Quantity, Avg\_Price, Delivery\_Charges, Coupon\_Status </p>|
+|Customers\_Data.csv |<p>Customer </p><p>demographic data </p>|<p>CustomerID, Gender, Location, </p><p>Tenure\_Months </p>|
+|Discount\_Coupon.csv |<p>Discount coupon </p><p>information </p>|<p>Month, Product\_Category, Coupon\_Code, </p><p>Discount\_pct </p>|
 |Marketing\_Spend.csv |Daily marketing spend data |Date, Offline\_Spend, Online\_Spend |
-|Tax\_Amount.csv |GST details for product categories |Product\_Category, GST |
+|Tax\_Amount.csv |<p>GST details for </p><p>product categories </p>|Product\_Category, GST |
 
-Detailed dataset information about the columns can be found in the data description file.
+Detailed dataset information about the columns can be found in the data description 
+
+file. 
 ## **EDA Business objective ![ref1]**
 The e-commerce company is expecting below analysis using the data ![ref1]
 
@@ -60,32 +60,39 @@ The e-commerce company is expecting below analysis using the data ![ref1]
 - Customers who started in each month and understand their behavior 
 - Which Month cohort has maximum retention? 
 ## **Lets have a look t some of the analysis** 
-![](images/Aspose.Words.34ad650c-9d10-4395-bcf2-0f0df7b8b7b9.003.jpeg)
+![](images/Aspose.Words.adc54386-ef95-453a-b1af-d00af5805741.003.jpeg)
 
-We can see that more number of customers were acquired in the month of Aug roughly around 300 customers, and least number of customers were acquired in the month of Feb. 
+We can see that more number of customers were acquired in the month of Aug 
+
+roughly around 300 customers, and least number of customers were acquired in the month of Feb. 
 
 **Retention of customers on a month-on-month basis** 
 
-![]images/Aspose.Words.34ad650c-9d10-4395-bcf2-0f0df7b8b7b9.004.png)
+![](images/Aspose.Words.adc54386-ef95-453a-b1af-d00af5805741.004.png)
 
 **How the revenues from existing/new customers on a month-on-month basis** 
 
-![](images/Aspose.Words.34ad650c-9d10-4395-bcf2-0f0df7b8b7b9.005.jpeg)
+![](images/Aspose.Words.adc54386-ef95-453a-b1af-d00af5805741.005.jpeg)
 
-Till June the company saw huge inflow of new customers and after June it was the exsiting customers had a high inflow to the store 
+Till June the company saw huge inflow of new customers and after June it was the 
 
-![](images/Aspose.Words.34ad650c-9d10-4395-bcf2-0f0df7b8b7b9.006.jpeg)
+exsiting customers had a high inflow to the store 
 
-Till June new customers contributed more to the revenue and after june Existing customers were the highest contributers to the revenue with an exception case that happened in october. 
+![](images/Aspose.Words.adc54386-ef95-453a-b1af-d00af5805741.006.jpeg)
+
+Till June new customers contributed more to the revenue and after june Existing 
+
+customers were the highest contributers to the revenue with an exception case that happened in october. 
 
 **How the discounts play a role in the revenues** 
 
-![](images/Aspose.Words.34ad650c-9d10-4395-bcf2-0f0df7b8b7b9.007.png)
+![](images/Aspose.Words.adc54386-ef95-453a-b1af-d00af5805741.007.png)
 
 **Which product was purchased mostly based on the quantity** 
 
-![](images/Aspose.Words.34ad650c-9d10-4395-bcf2-0f0df7b8b7b9.008.jpeg)
-## **Analyze key performance indicators (KPIs) on product categories** 
+![](images/Aspose.Words.adc54386-ef95-453a-b1af-d00af5805741.008.jpeg)
+## **Analyze key performance indicators (KPIs) on product** 
+## **categories** 
 Top 5 categories by revenue 
 
 
@@ -113,21 +120,15 @@ Top 5 categories by quantity
 |**Drinkware**|2\.73E+05|30501|
 |**Lifestyle**|1\.25E+05|24881|
 |**Nest-USA**|2\.72E+06|21430|
-## **Understand the trends/seasonality of sales by category, location, month, etc. ![ref2]**
-We can see that Nest-USA has the highest share in the revenue across all the months followed by Apperal and nest ![ref3]
 ## **Customer Segmentation** 
 - Heuristic (Value based, RFM) – Divide the customers into Premium, Gold, Silver, Standard customers and define a strategy on the same  
 
 
 
-|**heuristic\_segment** |**Count** |
+|**Heuristic\_segment** |**Count** |
 | - | - |
 |**Standard** |697|
-
-
-
 |**Silver** |611|
-| - | - |
 |**Premium** |129|
 |**Gold** |31|
 # Insights and recommendation ![ref1]
@@ -168,8 +169,90 @@ We can see that Nest-USA has the highest share in the revenue across all the mon
 - **Cohort Analysis:** Deep dive into the behavior of different customer cohorts to identify patterns and tailor marketing strategies for specific groups. 
 - **Product Recommendations:** Implement a product recommendation system based on customer purchase history to increase sales and customer engagement. 
 - **Customer Feedback:** Collect customer feedback to identify areas for improvement and enhance customer experience. Implement changes based on customer feedback to improve overall satisfaction. 
+## **Hypothesis testing** 
+**Coupon use and high transaction value** 
+
+H0: The average transaction value for customers who use coupons is less than or 
+
+equal to the average transaction value for customers who don't use coupons. H₁: The average transaction value for customers who use coupons is greater than 
+
+the average transaction value for customers who don't use coupons. 
 
 
-[ref1]: images/Aspose.Words.34ad650c-9d10-4395-bcf2-0f0df7b8b7b9.002.png
-[ref2]: images/Aspose.Words.34ad650c-9d10-4395-bcf2-0f0df7b8b7b9.009.jpeg
-[ref3]: images/Aspose.Words.34ad650c-9d10-4395-bcf2-0f0df7b8b7b9.010.jpeg
+
+|**Coupon\_Status** |**Count** |
+| - | - |
+|**Clicked** |26926|
+|**Used** |17904|
+|**Not Used** |8094|
+
+Average Transaction Value for Customers Who Used Coupons:  
+
+87\.17706099195709 
+
+Average Transaction Value for Customers Who Didn't Use Coupons:  
+
+90\.52506424511984 
+
+- We use T-test to test this between coupon status=used or not used 
+- Fail to reject the null hypothesis. There is no significant difference in average transaction value between customers who use coupons and those who don't. 
+
+**Influence of Demographics on Purchase Behavior** 
+
+H₀: There is no difference in average purchase frequency (or order value) across 
+
+different demographic groups (e.g., gender, location). 
+
+H₁: There is a difference in average purchase frequency (or order value) across 
+
+different demographic groups. 
+
+
+
+|**Location** |**Average\_Order\_Value** |
+| - | - |
+|**California** |89\.393115|
+|**Chicago** |88\.459498|
+|**New Jersey** |90\.976429|
+|**New York** |83\.864909|
+|**Washington DC** |93\.620878|
+
+
+
+- We use Annova to test this hypothesis with multiple groups 
+- Reject H₀: There is a difference in average order value across locations. 
+
+![](images/Aspose.Words.adc54386-ef95-453a-b1af-d00af5805741.009.jpeg)
+
+**Tenure Segment vs. Purchase Frequency** 
+
+H₀: Customers with low tenure (e.g., < 6 months) have no difference in purchase frequency compared to customers with high tenure (e.g., ≥ 6 ≥6 months). 
+
+H₁: There is a difference in purchase frequency between low-tenure and high-tenure 
+
+customers. 
+
+- Purchase Frequency= Tenure (in months)/ Total Transactions 
+- We use t-test ind to check for this hypothesis 
+
+![](images/Aspose.Words.adc54386-ef95-453a-b1af-d00af5805741.010.jpeg)
+
+There is a significant difference in normalized purchase frequency between 
+
+low-tenure and high-tenure customers. 
+
+**Effect of Delivery Charges on Purchase Volume / Bill amount** 
+
+H₀: Paying higher delivery charges does not affect the quantity ordered (i.e., no difference in quantity between orders with high vs. low delivery charges). 
+
+H₁: Higher delivery charges do affect quantity ordered (people might buy more in one 
+
+go to offset shipping, or might buy less). 
+
+- We use Annova to test this out 
+- Reject H₀: There is a significant difference in bill amounts across delivery charge groups. 
+
+![](images/Aspose.Words.adc54386-ef95-453a-b1af-d00af5805741.011.jpeg)
+
+
+[ref1]: images/Aspose.Words.adc54386-ef95-453a-b1af-d00af5805741.002.png
